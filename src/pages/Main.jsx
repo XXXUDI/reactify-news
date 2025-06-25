@@ -46,7 +46,7 @@ const Main = () => {
     const handlePageClick = (pageNumber) => {
         changeFilters('page_number', pageNumber);
     }
-    
+
     return (
         <main className={styles.main} >
             {dataCategories ? (
@@ -60,7 +60,7 @@ const Main = () => {
             )}
             
             
-            <Search keywords={filters.keywords} setKeywords={(keywords) => chageFilters('keywords', keywords)}/>
+            <Search keywords={filters.keywords} setKeywords={(keywords) => changeFilters('keywords', keywords)}/>
 
             <NewsBanner
             isLoading={isLoading} 
